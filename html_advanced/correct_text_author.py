@@ -1,11 +1,8 @@
-from bs4 import BeautifulSoup
+import re
 
 # Load the HTML content from the file
-with open("index.html", "r") as f:
-    soup = BeautifulSoup(f, "html.parser")
-
-# Extract all testimonial articles
-testimonials = soup.select("section:has(h2:contains('Testimonials')) article")
+with open("29-index.html", "r") as f:
+    html_content = f.read()
 
 # Expected data
 expected_texts = [
@@ -18,13 +15,22 @@ expected_texts = [
 
 expected_authors = ["Yuri Y.", "Dorrie S.", "Sven H."]
 
+# Extract blockquotes and cites using regex
+blockquote_pattern = (r'<blockquote>\s*([^<]+)\s*<cite>([^<]+)'
+                      r'</cite>\s*</blockquote>')
+matches = re.findall(blockquote_pattern, html_content)
+
 # Check and print results
 for i in range(3):
-    quote = testimonials[i].blockquote
-    cite = quote.cite
+    if i < len(matches):
+        quote_text = matches[i][0].strip()
+        cite_text = matches[i][1].strip()
 
-    text_correct = expected_texts[i] in quote.text.strip()
-    author_correct = cite and cite.text.strip() == expected_authors[i]
+        text_correct = expected_texts[i] in quote_text
+        author_correct = cite_text == expected_authors[i]
+    else:
+        text_correct = False
+        author_correct = False
 
     ordinal = ['first', 'second', 'third'][i]
     print(f"{ordinal} article has correct text: {text_correct}")
