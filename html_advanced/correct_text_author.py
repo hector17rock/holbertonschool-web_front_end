@@ -1,8 +1,15 @@
 import re
+import os
 
-# Load the HTML content from the file
-with open("29-index.html", "r") as f:
-    html_content = f.read()
+# Try to find the correct HTML file
+filenames = ["index.html", "29-index.html"]
+html_content = ""
+
+for filename in filenames:
+    if os.path.exists(filename):
+        with open(filename, "r") as f:
+            html_content = f.read()
+        break
 
 # Expected data
 expected_texts = [
