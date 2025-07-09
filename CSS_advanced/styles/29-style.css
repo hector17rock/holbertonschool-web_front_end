@@ -36,7 +36,7 @@
     --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
---nav-item-link-hover: var(--color-white);
+    --nav-item-link-hover: var(--color-white);
     --section-tagline-margin: 0;
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
@@ -177,21 +177,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--nav-item-link-hover);
 }
 
-.nav .nav-link::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--color-white);
-    width: 0;
-    height: 20%;
-}
-
-.nav .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary);
-    width: 100%;
-}
-
 ul.row {
     margin: 0;
     padding: 0;
@@ -231,7 +216,7 @@ ul.row {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background-color: var(--color-black);
-    --button-color: var(--color-white);
+    --button-color: var(--color-white)
 }
 
 .footer-address {
@@ -240,13 +225,13 @@ ul.row {
 
 .social-link {
     display: block;
+
 }
 
 .social-link > svg {
     fill: var(--text-color);
 }
 
-/* Services card styling */
 .card-services .card-title {
     margin: 0;
 }
@@ -256,14 +241,12 @@ ul.row {
     padding: 2rem;
     background-color: var(--color-light-grey);
 }
-
 .card-services a:hover {
     color: var(--color-white);
     background-color: var(--color-primary);
     text-decoration: none;
 }
 
-/* Button styling */
 .button {
     display: var(--button-display);
     padding: var(--button-padding);
@@ -275,11 +258,10 @@ ul.row {
 
 .button:hover {
     color: var(--button-hover-color);
-    background-color: var(--button-hover-background);
     text-decoration: var(--button-hover-text-decoration);
+    background-color: var(--button-hover-background);
 }
 
-/* Card Testimonial */
 .card-testimonial {
     text-align: center;
 }
@@ -296,7 +278,6 @@ ul.row {
     color: var(--color-primary);
 }
 
-/* Section Hero */
 .section-hero {
     background-size: 90rem auto;
 }
@@ -309,7 +290,6 @@ ul.row {
     padding: 10rem 40rem 2rem 0;
 }
 
-/* Header and logo styling */
 .header {
     padding: var(--header-padding);
 }
@@ -323,4 +303,19 @@ ul.row {
     position: var(--header-logo-link-position);
     top: var(--header-logo-link-top);
     left: var(--header-logo-link-left);
+}
+
+.nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 0.2rem;
+}
+
+.nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary);
+    width: 100%;
 }
