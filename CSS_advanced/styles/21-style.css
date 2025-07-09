@@ -513,6 +513,12 @@ a[href]:active {
   list-style: none;
 }
 
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Simplified col- selector */
 [class*="col-"] {
   float: left;
