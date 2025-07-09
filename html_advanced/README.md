@@ -1,5 +1,11 @@
 # HTML Advanced
 
+> A comprehensive collection of HTML5 examples, styleguides, and progressive web development demonstrations.
+
+## Author
+
+**Hector** - *Project Developer*
+
 This directory contains a comprehensive collection of HTML5 examples, styleguides, and progressive web development demonstrations. It showcases modern HTML practices, semantic markup, and various multimedia implementations for the Techium digital agency website.
 
 ## 📁 Project Overview
@@ -188,4 +194,7 @@ This project serves as a comprehensive learning resource for:
 
 ---
 
-*This project is part of the Holberton School Web Frontend curriculum, demonstrating advanced HTML concepts and modern web development practices.*
+**Project developed by Hector**  
+*Demonstrating advanced HTML5 concepts and modern web development practices*
+
+*This project is part of the Holberton School Web Frontend curriculum, showcasing comprehensive HTML5 implementation and progressive web development techniques.*
