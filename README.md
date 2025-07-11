@@ -84,6 +84,12 @@ To view the project:
 2. Navigate to the `html_advanced` and `CSS_advanced` directories for detailed examples.
 3. Open `index.html` files in a modern web browser to view the website examples.
 
+## Authors
+
+**Hector** - *Project Developer and Maintainer*
+- GitHub: [@hector](https://github.com/hector)
+- Email: [Contact Information]
+
 ## Contributions
 
 Contributions to improve this project are welcome. Please fork the repository and submit pull requests.
