@@ -6,8 +6,51 @@ This repository contains advanced projects for web frontend development, focusin
 
 ## Directory Structure
 
-- **CSS_advanced/**: Contains advanced CSS exercises and comprehensive styling techniques.
-- **html_advanced/**: Contains incremental HTML5 examples and styleguides demonstrating modern web practices.
+```plaintext
+holbertonschool-web_front_end
+├── CSS_advanced
+│   ├── images
+│   │   ├── pic-about-01.jpg
+│   │   ├── pic-article-01.jpg
+│   │   ├── pic-article-02.jpg
+│   │   ├── pic-article-03.jpg
+│   │   ├── pic-person-01.jpg
+│   │   ├── pic-person-02.jpg
+│   │   ├── pic-person-03.jpg
+│   │   ├── pic-work-01.jpg
+│   │   ├── pic-work-02.jpg
+│   │   └── pic-work-03.jpg
+│   ├── styles (32 CSS files)
+│   └── README.md
+├── html_advanced
+│   ├── README.md
+│   ├── index.html
+│   ├── about.html
+│   ├── contact.html
+│   ├── latest_news.html
+│   ├── styleguide.html
+│   ├── article.html
+│   ├── favicon.ico
+│   ├── favicon.png
+│   ├── 0-39-index.html (incremental development files)
+│   ├── 11-39-styleguide.html (styleguide files)
+│   └── Python testing scripts (8 files)
+└── README.md
+```
+
+### Directory Breakdown:
+
+#### **CSS_advanced/** (44 files total)
+- **images/** (10 files) - High-resolution images for various website sections
+- **styles/** (32 files) - Progressive CSS files from `1-style.css` to `32-style.css`
+- **README.md** - Comprehensive documentation of CSS advanced features
+
+#### **html_advanced/** (53 files total)
+- **Core Pages** (7 files) - Main website pages including index, about, contact, etc.
+- **Incremental Development** (30 files) - HTML files showing progressive development from 0-index.html to 36-index.html
+- **Styleguides** (8 files) - Component demonstrations and HTML element examples
+- **Testing Scripts** (8 files) - Python validation and testing utilities
+- **Assets** (2 files) - Favicon files for the website
 
 ## HTML Advanced Module
 
