@@ -162,6 +162,35 @@ This project requires 10 high-resolution images from Unsplash that should be rep
 - **Articles**: Reading, writing, content creation
 - **Person**: Professional portraits, headshots
 
+## 📊 CSS File Progression
+
+Here's a visual representation of the CSS file progression showcasing the phases of advanced CSS development:
+
+```mermaid
+graph TD;
+    A[1-style.css] --> B[10-style.css];
+    B --> C[11-style.css];
+    C --> D[15-style.css];
+    D --> E[16-style.css];
+    E --> F[25-style.css];
+    F --> G[26-style.css];
+    G --> H[32-style.css];
+    subgraph Foundations
+        A --> B
+    end
+    subgraph Theming & Variables
+        C --> D
+    end
+    subgraph Layout & Components
+        E --> F
+    end
+    subgraph Advanced Features
+        G --> H
+    end
+```
+
+Each phase builds upon the previous, enhancing the styling capabilities and introducing new features. This diagram helps visualize the progression from foundational styles to advanced features and animations.
+
 ## Performance Considerations
 
 ### CSS Optimization
