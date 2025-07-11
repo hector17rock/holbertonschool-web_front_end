@@ -297,3 +297,4 @@ This repository demonstrates web front-end development skills. To contribute:
 ---
 
 *Part of the Holberton School Web Front-End curriculum*
+ 
