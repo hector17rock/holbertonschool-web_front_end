@@ -224,6 +224,66 @@ This CSS framework provides a solid foundation for:
 - **Theme Variations**: CSS custom properties enable easy theming
 - **Animation Libraries**: Transition system can be expanded
 
+## Task Descriptions and Examples
+
+Each task in the CSS Advanced Project builds incrementally to enhance styling capabilities. Here, we provide detailed descriptions and examples:
+
+### Tasks 1-10: Foundation
+- **1-style.css**: Implements smooth scrolling for the document.
+  ```css
+  html {
+    scroll-behavior: smooth;
+  }
+  ```
+- **10-style.css**: Introduces base styles and typography.
+  ```css
+  :root {
+    --color-primary: #d73953;
+    --font-family-title: "Raleway", "Helvetica Neue";
+  }
+  body {
+    font-family: var(--font-family-title);
+  }
+  ```
+
+### Tasks 11-15: Theming & Variables
+- **15-style.css**: Establishes CSS custom properties for theming.
+  ```css
+  :root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+  }
+  a {
+    color: var(--color-black);
+  }
+  ```
+
+### Tasks 16-25: Layout & Components
+- **20-style.css**: Implements foundational layout techniques.
+  ```css
+  body {
+    margin: 0;
+    line-height: 1.5;
+  }
+  main {
+    display: block;
+  }
+  ```
+
+### Tasks 26-32: Advanced Features
+- **30-style.css**: Adds sophisticated animation timings.
+  ```css
+  :root {
+    --transition-duration: 0.3s;
+    --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+  }
+  .button {
+    transition: all var(--transition-duration) var(--transition-cubic-bezier);
+  }
+  ```
+
+These task examples showcase the systematic development approach used in this project.
+
 ## Conclusion
 
 The CSS Advanced Project demonstrates a comprehensive approach to modern web styling. From basic resets to advanced animations, this project showcases:
